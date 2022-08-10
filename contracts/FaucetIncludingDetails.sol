@@ -53,10 +53,10 @@ contract FaucetIncludingDetails is Ownable, FaucetDetails {
 
     function requestTokens() public onlyWhitelisted(msg.sender) {
         numberOfTimesAddressHasUsedFaucet[msg.sender] += 1;
+        totalNumberOfTokensUserHasPulled[msg.sender] += 10; // putting up here cause the whole transaction reverts if the lock time hasn't expired, right?
         require(block.timestamp >= whitelistedAddressesAndLockTime[msg.sender], "lock time has not expired");
         token.transfer(msg.sender, 10);
         whitelistedAddressesAndLockTime[msg.sender] = block.timestamp + 24 hours;
-        totalNumberOfTokensUserHasPulled[msg.sender] += 10;
         emit TokensDistributed(msg.sender, 10);
     }
 

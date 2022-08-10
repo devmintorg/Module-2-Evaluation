@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-contract FaucetDetails {
+abstract contract FaucetDetails {
     mapping (address => uint256) numberOfTimesAddressHasUsedFaucet;
     mapping(address => uint256) totalNumberOfTokensUserHasPulled;
 

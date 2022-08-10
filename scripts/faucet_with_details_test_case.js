@@ -94,7 +94,7 @@ async function main() {
   console.log("24 more hours have passed...")
 
   await faucet.connect(addr3).requestTokens();
-  console.log("addr3 can request again yet since 24 hours have passed");
+  console.log("addr3 can request again since 24 hours have passed");
 
 }
 
