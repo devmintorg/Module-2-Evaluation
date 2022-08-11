@@ -1,0 +1,26 @@
+{
+  "name": "eval2",
+  "version": "1.0.0",
+  "description": "This is the evaluation for Module 2 of the devMint Course. You are starting with a blank repository and are expected to add a fully functioning repository with the following contracts:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Schnablette/Module-2-Evaluation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Schnablette/Module-2-Evaluation/issues"
+  },
+  "homepage": "https://github.com/Schnablette/Module-2-Evaluation#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "hardhat": "^2.10.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.7.2"
+  }
+}
